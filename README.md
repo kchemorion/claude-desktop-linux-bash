@@ -31,7 +31,9 @@ The built application will be in the `claude-desktop` directory. You can run it 
 
 A few notes:
 - The script creates stub implementations for the native functions, which means some features might not work (like global shortcuts)
+   - Global shortcuts are confirmed to work on Ubuntu/X11 24.04
 - It includes Wayland support via environment variables
+   - Global shortcuts may not be available on Wayland due to lack of implementations
 - The build process requires quite a bit of disk space for intermediary files
 - You might want to add the binary directory to your PATH or copy the files to system locations
 
