@@ -14,14 +14,7 @@ sudo apt-get install p7zip-full imagemagick icoutils
 sudo pnpm install -g electron
 ```
 
-2. Save the script above as `build-claude-desktop.sh`
-
-3. Make it executable:
-```bash
-chmod +x build-claude-desktop.sh
-```
-
-4. Run it:
+2. Run the build script:
 ```bash
 ./build-claude-desktop.sh
 ```
@@ -34,9 +27,7 @@ The script will:
 5. Modify and repackage the app.asar
 6. Create desktop entries and launcher scripts
 
-The built application will be in the `claude-desktop` directory. You can run it using `claude-desktop/bin/claude-desktop`.
-
-Would you like me to explain any particular part of the script in more detail? Also, let me know if you run into any issues during the build process.
+The built application will be in the `claude-desktop` directory. You can run it using `./claude-desktop/bin/claude-desktop`.
 
 A few notes:
 - The script creates stub implementations for the native functions, which means some features might not work (like global shortcuts)
